@@ -1,0 +1,29 @@
+/* --- RESET EVERYTHING CLEAN --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- GLOBAL THEME --- */
+body {
+  background-color: #000;
+  color: white;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Links default style */
+a {
+  color: #ffb300;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffcc42;
+}
+
+/* Space for navbar */
+.page-container {
+  padding-top: 100px;
+}

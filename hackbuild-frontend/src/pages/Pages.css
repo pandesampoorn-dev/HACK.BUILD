@@ -1,0 +1,64 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  padding: 40px;
+}
+
+/* Title */
+.page-title {
+  font-size: 2.2rem;
+  color: #ffb700;
+  margin-bottom: 20px;
+}
+
+/* List layout */
+.list {
+  margin-top: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  background: #111;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  border: 1px solid #252525;
+  transition: 0.2s;
+}
+
+.list-item:hover {
+  background: #1b1b1b;
+}
+
+/* Form Styling */
+.form {
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #222;
+  max-width: 650px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  background: #1c1c1c;
+  border: none;
+  color: white;
+}
+
+.form button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  background: #ffb700;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

@@ -1,0 +1,101 @@
+/* Full background */
+.auth-wrapper {
+  min-height: calc(100vh - 80px); /* avoid navbar overlap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Branding text */
+.brand-title {
+  font-size: 52px;
+  font-weight: 900;
+}
+
+.highlight {
+  color: #ffb800;
+}
+
+.subtitle {
+  margin-top: -10px;
+  opacity: 0.7;
+  margin-bottom: 35px;
+}
+
+/* Card */
+.auth-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  width: 450px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0px 0px 40px rgba(255, 187, 0, 0.1);
+}
+
+/* Inputs */
+.input-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 22px;
+  background: #1e2836;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.auth-btn {
+  width: 100%;
+  background: #e68a00;
+  color: white;
+  padding: 14px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.auth-btn:hover {
+  background: #ffb800;
+}
+
+.secondary-btn {
+  width: 100%;
+  background: #2a2f36;
+  color: #ffb800;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.heading {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.error-text {
+  color: #ff5555;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.home-bg {
+  background: radial-gradient(ellipse at center, #1a1a1a, #000);
+}
