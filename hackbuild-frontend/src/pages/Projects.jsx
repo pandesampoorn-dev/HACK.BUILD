@@ -7,7 +7,7 @@ export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
 
-  // ⭐ Get logged in user
+  //  Get logged in user
   const currentUserId = Number(localStorage.getItem("userId"));
   const currentUserName = localStorage.getItem("name");
 
@@ -51,7 +51,7 @@ export default function Projects() {
       <div className="projects-grid">
         {projects.map((project) => {
           
-          // 🟢 UPDATED — Compare IDs, not names
+          //  UPDATED — Compare IDs, not names
           const isOwner = currentUserId === project.ownerId;
           const alreadyJoined = project.participants?.some(
             (p) => p.id === currentUserId
@@ -102,7 +102,7 @@ export default function Projects() {
         })}
       </div>
 
-      {/* 🟣 Modal */}
+      {/*  Modal */}
       {selectedProject && (
         <div className="modal-backdrop" onClick={() => setSelectedProject(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -111,7 +111,7 @@ export default function Projects() {
 
             <h4>Team Members</h4>
 
-            {/* 🟢 Updated to show name + email + owner badge */}
+            {/*  Updated to show name + email + owner badge */}
             {selectedProject.participants.map((m, i) => (
               <p key={i}>
                 👤 {m.name} — <small>{m.email}</small>
