@@ -18,14 +18,14 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
-    // 🟢 REGISTER a new user (OR return existing user if email already used)
+    //  REGISTER a new user (OR return existing user if email already used)
     @PostMapping("/register")
     public User register(@RequestBody User requestUser) {
         return userRepository.findByEmail(requestUser.getEmail())
                 .orElseGet(() -> userRepository.save(requestUser));
     }
 
-    // 🟢 LOGIN (returns the user with ID)
+    //  LOGIN (returns the user with ID)
     @PostMapping("/login")
     public User login(@RequestBody User loginUser) {
         return userRepository.findByEmail(loginUser.getEmail())
